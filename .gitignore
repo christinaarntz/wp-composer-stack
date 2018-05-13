@@ -11,6 +11,7 @@ public/app/uploads/*
 
 # Ignore Exceptions
 !public/app/mu-plugins/wp-composer-stack.php
+!public/app/mu-plugins/update-management.php
 
 # WordPress
 public/core
