@@ -25,6 +25,11 @@ insert_final_newline = false
 indent_style = space
 indent_size = 2
 
+[composer.json]
+insert_final_newline = false
+indent_style = tab
+indent_size = 4
+
 [.*rc]
 insert_final_newline = false
 indent_style = space
