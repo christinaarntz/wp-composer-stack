@@ -46,6 +46,8 @@ if [[ ! -d "${VVV_PATH_TO_SITE}/public/core/wp-load.php" ]]; then
 	elif [ "${WP_TYPE}" = "subdirectory" ]; then
 		sed -i "s#MULTISITE=false#MULTISITE=true#" "${VVV_PATH_TO_SITE}/.env"
 		sed -i "s#SUBDOMAIN_INSTALL=true#SUBDOMAIN_INSTALL=false#" "${VVV_PATH_TO_SITE}/.env"
+	else
+		sed -i "s#SUNRISE=true#SUNRISE=false#" "${VVV_PATH_TO_SITE}/.env"
 	fi
 
 	noroot wp comment delete 1 --force --quiet
